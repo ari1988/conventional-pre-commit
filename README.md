@@ -21,7 +21,7 @@ Add a new repo entry to your configuration file:
 repos:
   # - repo: ...
 
-  - repo: https://github.com/compilerla/conventional-pre-commit
+  - repo: https://github.com/ari1988/conventional-pre-commit
     rev: <git sha or tag>
     hooks:
       - id: conventional-pre-commit
