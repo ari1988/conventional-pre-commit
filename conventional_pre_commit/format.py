@@ -29,7 +29,8 @@ def r_types(types):
 def r_scope(optional=True):
     """Regex str for an optional (scope)."""
     if optional:
-        return r"(\([\w \/:,-]+\))?"
+        #return r"(\([\w \/:,-]+\))?"
+        return r"(\(\w+-\d+\))"
     else:
         return r"(\(\w+-\d+\))"
 
@@ -79,7 +80,7 @@ def conventional_types(types=[]):
     return types
 
 
-def is_conventional(input, types=DEFAULT_TYPES, optional_scope=False):
+def is_conventional(input, types=DEFAULT_TYPES, optional_scope=True):
     """
     Returns True if input matches Conventional Commits formatting
     https://www.conventionalcommits.org
