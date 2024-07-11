@@ -79,7 +79,7 @@ def conventional_types(types=[]):
     return types
 
 
-def is_conventional(input, types=DEFAULT_TYPES, optional_scope=True):
+def is_conventional(input, types=DEFAULT_TYPES, optional_scope=False):
     """
     Returns True if input matches Conventional Commits formatting
     https://www.conventionalcommits.org
