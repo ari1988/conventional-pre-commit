@@ -31,7 +31,7 @@ def r_scope(optional=True):
     if optional:
         return r"(\([\w \/:,-]+\))?"
     else:
-        return r"(\([\w \/:,-]+\))"
+        return r"(\(\w+-\d+\))"
 
 
 def r_delim():
